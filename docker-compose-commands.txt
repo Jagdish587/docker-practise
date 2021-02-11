@@ -1,0 +1,22 @@
+
+create a file like docker-compose.yml
+
+version: "3.2"
+services:
+  web:
+    image: nginx
+    ports:
+      - 9090:80
+  databses:
+    image: "redis:alpine"
+	
+	
+
+docker-compose 
+
+docker-compose config
+
+docker-compose up -d ,you should alble to see nginx at localhost
+
+
+docker-compose up -d --scale databses=4

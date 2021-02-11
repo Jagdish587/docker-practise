@@ -40,3 +40,42 @@ docker-py version: 4.2.1
 CPython version: 3.7.7
 OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 
+
+Help commands for docker container run command
+$ docker container run --help 
+
+To launch docker with shell , t means alloacate pseudo tty terminal
+$ docker container run -it --name ubuntuimage ubuntu
+
+To start a container 
+$ docker container start -ai  ubuntuimage
+
+
+
+Show network 
+$ docker network ls
+Inspect a network 
+$ docker network inspect
+Create a network 
+$ docker network create --driver
+
+TO inspect any image 
+$ docker inspect ubuntu
+Attach a network to container 
+$ docker network connect
+
+
+Detach a network from container 
+$ docker network disconnect
+
+Clean up dangling images 
+$ docker image prune 
+
+Clean up all images which you are not using 
+$ docker image prune -a
+
+Clean up everything 
+$ docker system prune
+
+
+
